@@ -115,6 +115,7 @@ section:last-child {
 /*  -----------------  */
 
 .navigation a {
+      font-family: 'Karla', sans-serif;
       font-weight: 700;
       background-color: #ea1e25;}
 
