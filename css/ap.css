@@ -11,7 +11,7 @@
 
 @font-face {
     font-family: "steelfish rg";
-    src: url("/fonts/steelfish/steelfish rg.ttf");
+    src: url("../fonts/steelfish/steelfish rg.ttf");
     font-weight: 400;
 }
 
@@ -71,7 +71,7 @@ strong {
 
 section {
       border-bottom: 1px solid #222222;
-      background-image: url("/img/ap/ap-inzet-rechts.png");
+      background-image: url("../img/ap/ap-inzet-rechts.png");
       background-position: right top;
       background-repeat: no-repeat;
       background-size: 15vw;
@@ -79,7 +79,7 @@ section {
 
 section:first-child {
       border-bottom: 0;
-      background-image: url("/img/ap/ap-cover-left.png"), url("/img/ap/ap-cover-right.png");
+      background-image: url("../img/ap/ap-cover-left.png"), url("../img/ap/ap-cover-right.png");
       background-position: left bottom, right top;
       background-repeat: no-repeat, no-repeat;
       background-size: contain, contain;
@@ -104,7 +104,7 @@ section:first-child h2 {
 }
 
 section:last-child {
-      background-image: url('/img/ap/ap-laatste-slide.png');
+      background-image: url('../img/ap/ap-laatste-slide.png');
       background-size: auto 80vh;
       background-repeat: no-repeat;
       background-position: center 10vh;
@@ -115,7 +115,6 @@ section:last-child {
 /*  -----------------  */
 
 .navigation a {
-      font-family: 'Karla', sans-serif;
       font-weight: 700;
       background-color: #ea1e25;}
 
