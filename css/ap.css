@@ -33,7 +33,7 @@ li {
       font-size: 1.78575vw;
       margin-left: 2.5vw;
       line-height: 3.21435vw;
-      margin-bottom: 1.4286vw;}
+      margin-bottom: .5vw;}
 
 li::before {
 			content: "•";
@@ -41,7 +41,11 @@ li::before {
   		display: inline-block; width: 1em;
   		margin-left: -1em}
 
-ul li > ul li {
+ul li > ul,  ul li > ul li > ul {
+			margin-bottom: 0;
+}
+
+ul li > ul li > ul {
 			margin-bottom: 0;
 }
 
