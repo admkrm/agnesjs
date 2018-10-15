@@ -1,0 +1,153 @@
+/*
+  Name: script-index.css
+  Description: Styling for Agnes, a lightweight javascript presentation framework. Styling for the start page
+  Author: Kristof Michiels
+  Date: june-october 2018
+*/
+
+/*  --------------  */
+/*  |   GENERAL  |  */
+/*  --------------  */
+
+html {
+      font-size: 62.5%;
+      font-family: 'Open Sans', sans-serif;}
+
+body {
+      font-size: 1.75rem;}
+
+main {
+      max-width: 700px;
+      margin-bottom: 2.5rem;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 0 2.5rem;}
+
+header, footer {
+      margin: 3.5rem 0 4.5rem 0;}
+
+nav, footer ul {
+      border-top: 1px solid #d5d5d5;
+      border-bottom: 1px solid #d5d5d5;
+      padding-top: 2.5rem;}
+
+nav ul, footer ul {
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 0 2.5rem;}
+
+footer ul {
+      padding-top: 2.5rem;}
+
+nav ul li, footer ul li {
+      color: #38444b;
+      margin-bottom: 2.5rem;
+      cursor: pointer;}
+
+nav ul li.is-checked, footer ul li.is-checked {
+      font-weight: 900;
+      color: #505150;
+      text-decoration: underline;}
+
+section {
+      background-color: #fefff7;
+      box-sizing: border-box;
+      position: relative;
+      margin-bottom: 2.5rem;}
+
+section a {
+      padding: 2.5rem;
+      height: inherit;
+      width: inherit;
+      display: block;
+      text-decoration: none;
+      border: 1px solid #d5d5d5;
+      box-sizing: border-box;
+      border-radius: .55rem;
+      box-shadow: .5rem .5rem rgba(5,5,5,.1);
+      transition-property: transform;
+      transition-duration: .25s;}
+
+section a:hover {
+      background-color: #f4f5ef;
+      box-sizing: border-box;
+      box-shadow: .65rem .65rem rgba(5,5,5,.1);
+      transform: translate(-0.15rem,-0.15rem);
+}
+
+/*  -----------------  */
+/*  |   TYPOGRAPHY  |  */
+/*  -----------------  */
+
+h1 {
+      font-family: 'Karla', sans-serif;
+      font-size: 3rem;
+      font-weight: 400;
+      margin-bottom: 3.5rem;
+      color: #505150;
+      padding: 0 2.5rem;}
+
+footer p {
+      color: #505150;
+      margin-bottom: 2.5rem;}
+
+section h2, section h3, section h4 {
+      font-family: 'Karla', sans-serif;
+      font-size: 2.5rem;
+}
+
+section h2 {
+      color: #3f87ae;
+      font-weight: 700;
+      margin-bottom: 2.5rem;}
+
+section h3 {
+      color: #019d5e;
+      font-weight: 700;
+      margin-bottom: 2.5rem;}
+
+section h4 {
+      color: #f6271d;
+      font-weight: 700;
+      position: absolute;
+      left: 2.5rem;
+      bottom: 2.5rem;}
+
+/*  ---------------------  */
+/*  |   @MEDIA QUERIES  |  */
+/*  ---------------------  */
+
+@media (min-width: 705px) {
+      nav ul, footer ul {
+        flex-direction: row;}
+
+}
+
+
+@supports (grid-area: auto) {
+      @media (min-width: 1150px) {
+
+            main {
+                  max-width: 1075px;
+                  display: grid;
+                  grid-template-columns: 1fr 1fr;
+                  grid-gap: 5rem;}
+
+            section {
+              margin-bottom: 0;}
+
+            section h2, section h3, section h4 {
+              font-size: 2.35rem;
+            }
+      }
+      @media (min-width: 1350px) {
+        main {
+              max-width: 1250px;}
+
+      }
+}

@@ -1,0 +1,111 @@
+/*
+  Name: AgnesJS
+  Description: Generic styling for Agnes. Agnes is a lightweight javascript presentation framework
+  Author: Kristof Michiels
+  Date: june-october 2018
+*/
+
+/*  --------------  */
+/*  |   GENERAL  |  */
+/*  --------------  */
+
+::-webkit-scrollbar {
+    display: none;}
+
+:root {
+    font-size: 62.5%;
+    box-sizing: border-box;}
+
+*, *:before, *:after {
+      box-sizing: inherit;}
+
+body {
+    width: 100vw;
+    height: 100vh;}
+
+section {
+    height: 70vw;
+    padding: 3.5715vw;
+    position: relative;}
+
+.hidden {
+    display: none;}
+
+pre {
+    font-size: 1.78575vw;
+    line-height: 2.28576vw;
+    background-color: #f2f0ed;
+    width: 92.857vw;
+    padding: 1.4286vw;
+    margin: 0 auto 2.5vw auto;
+    font-family: 'Source Code Pro', monospace;}
+
+img {
+    max-width: 100%;
+    max-height: 50vw;
+    margin: 0 auto;
+    display: block;
+    border: 1vw solid #f2f0ed;}
+
+h5 {
+    font-size: 1.78575vw;
+    text-align: center;
+    margin: 0;}
+
+/*  -----------------  */
+/*  |   NAVIGATION  |  */
+/*  -----------------  */
+
+.navigation {
+    display: none;
+    position: absolute;
+    bottom: 3.5715vw;
+    right: 3.5715vw;}
+
+.navigation a {
+    text-decoration: none;
+    color: white;
+    font-size: 2.1429vw;
+    line-height: 2.1429vw;
+    padding: 0.35715vw 0.7143vw;
+    background-color: white;}
+
+.navigation a#toRight {
+    margin-left: 1.07145vw;}
+
+/*  -----------------  */
+/*  |  PAGINATION   |  */
+/*  -----------------  */
+
+.pagination {
+    position: absolute;
+    font-size: 1.4vw;
+    bottom: 2.9vw;
+    left: 3.5vw;
+    color: #222;}
+
+section.chapter .pagination, section:first-child .pagination, section:last-child .pagination  {
+  display: none;}
+
+/*  ---------------------  */
+/*  |   @MEDIA QUERIES  |  */
+/*  ---------------------  */
+
+@supports (grid-area: auto) {
+    @media (min-width: 1200px) {
+        body {
+          display: grid;}
+
+        .navigation {
+          display: block;}
+
+        section {
+            height: 100vh;}
+
+        img {
+            max-width: 100%;
+            max-height: 60vh;
+            margin: 0 auto;
+            display: block;}
+    }
+}

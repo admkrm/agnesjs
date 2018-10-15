@@ -1,0 +1,134 @@
+/*
+  Name: HTML.Gallery
+  Description: Specific CSS for HTML.Gallery theme using Agnes. Agnes is a lightweight javascript presentation framework
+  Author: Kristof Michiels
+  Date: october 2018
+*/
+
+/*
+General information:
+- The slides all use Markdown. The system automatically translates this to HTML
+- Using Agnes, 1rem equals 10px. Agnes invites you to use this unit.
+- All slides are sections. First and last slides are automatically taken care of style-wise.
+- First slide contains an h1 (#)
+- All other slides start with h2 (##), followed by paragraphs (no symbol) and/or a list (-)
+- Chapter separator-sections are marked with a classname "chapter"
+*/
+
+/*  --------------  */
+/*  |   GENERAL  |  */
+/*  --------------  */
+
+body {
+      color: #171e31;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 400;}
+
+p {
+      font-size: 1.78575vw;
+      margin-bottom: 2.8572vw;
+      line-height: 3.125vw;}
+
+ul {
+      list-style-type: square;
+      margin-bottom: 2.8572vw;}
+
+li {
+      font-size: 1.78575vw;
+      margin-left: 2.5vw;
+      line-height: 3.21435vw;
+      margin-bottom: 1.4286vw;}
+
+section a {
+      color: #34b7eb;}
+
+h2 {
+      font-size: 3.57vw;
+      line-height: 4vw;
+      margin-bottom: 2.8572vw;
+      font-family: 'Karla', sans-serif;
+      font-weight: 700;}
+
+/*  -------------------  */
+/*  |   FRONT/BACK    |  */
+/*  -------------------  */
+
+section {
+      border-bottom: 1px solid #222222;
+}
+
+section:first-child, section:last-child {
+      border-bottom: 0;
+      background-color: #fefff7;}
+
+section:first-child h1, section:first-child h4, section:last-child h2, section:last-child h4 {
+      font-family: 'Karla', sans-serif;
+      font-weight: 700;
+      color: #3f87ae;}
+
+section:first-child h1 {
+      font-size: 3.5715vw;
+      margin-bottom: 3.5715vw;}
+
+section:first-child h2, section:first-child h3, section:last-child h2, section:first-child h3 {
+      font-family: 'Karla', sans-serif;
+      font-size: 3.5715vw;
+      margin-bottom: 3.5715vw;
+      color: #009d5f;}
+
+section:first-child h3, section:first-child h3, section:last-child h3, section:last-child h3 {
+      font-family: 'Karla', sans-serif;
+      color: #f24eb1;
+      font-size: 3.5715vw;}
+
+section:first-child h4, section:last-child h4 {
+      font-size: 3.5715vw;
+      position: absolute;
+      left: 3.5715vw;
+      bottom: 3.5715vw;
+      color: #f6271d;}
+
+section:last-child h2 {
+      font-size: 3.5715vw;
+      margin-bottom: 2.5vw;
+      color: #3f87ae;}
+
+section:first-child a, section:last-child a {color: #f6271d;}
+
+/*  ---------------------------  */
+/*  |   CHAPTER-RELATED       |  */
+/*  ---------------------------  */
+
+.chapter {background-color: #269d47;color: white;}
+.chapter ~ .chapter {background-color: #f28a24;}
+.chapter ~ .chapter ~ .chapter {background-color: #6e2979;}
+.chapter ~ .chapter ~ .chapter ~ .chapter {background-color: #ffd812;}
+.chapter ~ .chapter ~ .chapter ~ .chapter ~ .chapter {background-color: #c62329;}
+.chapter ~ .chapter ~ .chapter ~ .chapter ~ .chapter ~ .chapter {background-color: #e31351;}
+
+/*  -----------------  */
+/*  |   NAVIGATION  |  */
+/*  -----------------  */
+
+.navigation a {
+      font-family: 'Karla', sans-serif;
+      font-weight: 700;
+      background-color: #fdb5ba;}
+
+section:first-child > .navigation a, section:last-child > .navigation a {background-color: #eeb200; color: #fefff7;}
+
+.chapter .navigation a {background-color: white;}
+.chapter .navigation a {color: #269d47;}
+.chapter ~ .chapter .navigation a {color: #f28a24;}
+.chapter ~ .chapter ~ .chapter .navigation a {color: #6e2979;}
+.chapter ~ .chapter ~ .chapter ~ .chapter  .navigation a {color: #ffd812;}
+.chapter ~ .chapter ~ .chapter ~ .chapter ~ .chapter .navigation a {color: #c62329;}
+.chapter ~ .chapter ~ .chapter ~ .chapter ~ .chapter ~ .chapter .navigation a {color: #e31351;}
+
+/*  ---------------------  */
+/*  |   @MEDIA QUERIES  |  */
+/*  ---------------------  */
+
+@media (min-width: 1200px) {
+      section {border: 0;}
+}

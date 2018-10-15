@@ -1,0 +1,153 @@
+<!doctype html>
+<html>
+	<head>
+		<title>HTML.gallery - 1</title>
+		<link rel="stylesheet" type="text/css" href="/css/reset.css">
+		<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="/highlight/styles/googlecode.css">
+		<link href="https://fonts.googleapis.com/css?family=Karla:700|Open+Sans" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="/css/agnes.css">
+		<link rel="stylesheet" type="text/css" href="/css/htmlgallery.css">
+		<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/194554/scroll-converter.min.js'></script>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.19/marked.js'></script>
+		<script src='/highlight/highlight.pack.js'></script>
+		<script src="/js/script.js" defer></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+	</head>
+	<body data-markdown="true">
+				<section>
+							# HTML Gallery - Presentation Alpha
+							### Courtesy of the Agnes Presentation Automation framework. Made within the context of the Automatic Design project, Artesis Plantijn University College.
+							#### Kristof Michiels
+				</section>
+				<section>
+							## CSS Animatie
+							Dit is een test. In de eerste plaats om te zien of de code goed wordt weergegeven.
+							``` css
+							@keyframes springIn {
+  							0% {
+							    transform: scale(0.1);
+							    opacity: 0;
+							  }
+							  60% {
+							    transform: scale(1.2);
+							    opacity: 1;
+							  }
+							  100% {
+							    transform: scale(1);
+							  }
+							}
+							```
+							Dit is een test. In de eerste plaats om te zien of de code goed wordt weergegeven.
+				</section>
+				<section class="chapter">
+							## Chapter 2: a newer chapter
+				</section>
+				<section>
+							## CSS Animatie
+							Dit is een test. In de eerste plaats om te zien of de code goed wordt weergegeven.
+							``` css
+							@keyframes springIn {
+							  0% {
+							    transform: scale(0.1);
+							    opacity: 0;
+							  }
+							  60% {
+							    transform: scale(1.2);
+							    opacity: 1;
+							  }
+							  100% {
+							    transform: scale(1);
+							  }
+							}
+							```
+				</section>
+				<section class="chapter">
+							## Chapter 3: a newest chapter
+				</section>
+				<section>
+							## CSS Animatie
+							Dit is een test. In de eerste plaats om te zien of de code goed wordt weergegeven.
+							``` css
+							div {
+							  animation-duration: 2s;
+							  animation-name: springIn;
+							}
+							```
+							``` css
+							/* verkorte notatie: */
+							div {
+							  animation: springIn 2s;
+							}
+							```
+				</section>
+				<section>
+							## CSS Animatie
+							Dit is een test. In de eerste plaats om te zien of de code goed wordt weergegeven.
+							``` css
+							/* verkorte notatie */
+							animation: [animation-name] [animation-duration] [animation-timing-function]
+							[animation-delay] [animation-iteration-count] [animation-direction]
+							[animation-fill-mode] [animation-play-state];
+							```
+				</section>
+				<section>
+							## CSS Animatie
+							Dit is een test. In de eerste plaats om te zien of de code goed wordt weergegeven.
+
+							``` css
+							/* verkorte notatie */
+							animation: [animation-name] [animation-duration] [animation-timing-function]
+							[animation-delay] [animation-iteration-count] [animation-direction]
+							[animation-fill-mode] [animation-play-state];
+							```
+				</section>
+				<section>
+							## "Vendor prefixes"
+							- Op Webkit - =een browser engine - gebaseerde browsers vragen soms nog steeds een gepredikte versie van zowel animaties, keyframes en transities.
+							- Is slechts een kwestie van tijd.
+							- Je zou dus eigenlijk altijd beiden moeten gebruiken, zoals in het voorbeeld hiernaast
+							- Hoeft niet in je oefeningen!
+
+							``` css
+							div {
+							  -webkit-animation-duration: 2s;
+							  animation-duration: 2s;
+							  -webkit-animation-name: springIn;
+							  animation-name: springIn;
+							}
+							@-webkit-keyframes springIn { /* stijlen */ }
+							@keyframes springIn { /* stijlen */ }
+							```
+				</section>
+				<section class="chapter">
+							## Chapter 4: a newest chapter
+				</section>
+				<section class="chapter">
+							## Chapter 5: a newest chapter
+				</section>
+				<section class="chapter">
+							## Chapter 6: a newest chapter
+				</section>
+				<section>
+							## What is lorem ipsum?
+							Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+							Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+							- Op Webkit - =een browser engine - gebaseerde browsers vragen soms nog steeds een gepredikte versie van zowel animaties, keyframes en transities.
+							- Is slechts een kwestie van tijd.
+							- Je zou dus eigenlijk altijd beiden moeten gebruiken, zoals in het voorbeeld hiernaast
+				</section>
+				<section>
+							## Title
+							![Agnes Martin](img/agnes1.jpg)
+							##### This is a caption
+				</section>
+				<section>
+							## Thank you for listening! Questions?
+							#### kristof.michiels01@ap.be
+				</section>
+	</body>
+</html>

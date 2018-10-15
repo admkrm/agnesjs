@@ -1,0 +1,140 @@
+/*
+  Name: script-index.css
+  Description: Styling for Agnes, a lightweight javascript presentation framework. Styling for the start page
+  Author: Kristof Michiels
+  Date: june-october 2018
+*/
+
+/*  --------------  */
+/*  |   GENERAL  |  */
+/*  --------------  */
+
+html {
+      font-size: 62.5%;
+      font-family: 'Open Sans', sans-serif;}
+
+body {
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 1.75rem;}
+
+main {
+      margin-bottom: 2.5rem;}
+
+header {
+      margin: 3.5rem 0 2.5rem 0;
+      padding: 0 2.5rem;}
+
+footer {
+      padding: 0 2.5rem;}
+
+nav ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;}
+
+nav ul li {
+      color: #505150;
+      margin-bottom: 1.5rem;
+      cursor: pointer;}
+
+nav ul li.is-checked {
+      text-decoration: underline;}
+
+section {
+      background-color: #fefff7;
+      box-sizing: border-box;
+      position: relative;}
+
+section a {
+      padding: 2.5rem;
+      height: inherit;
+      width: inherit;
+      display: block;
+      text-decoration: none;
+      border: 1px solid #d2d3d1;
+      box-sizing: border-box;}
+
+section a:hover {
+      background-color: #f4f5ef;
+      box-sizing: border-box;
+}
+
+/*  -----------------  */
+/*  |   TYPOGRAPHY  |  */
+/*  -----------------  */
+
+h1 {
+      font-family: 'Karla', sans-serif;
+      font-size: 2.6rem;
+      font-weight: 400;
+      margin-bottom: 3rem;
+      color: red;}
+
+footer p {
+      color: #505150;
+      margin-bottom: 2.5rem;
+      text-align: center;}
+
+section h2, section h3, section h4 {
+      font-family: 'Karla', sans-serif;
+      font-size: 2rem;
+}
+
+section h2 {
+      color: #3f87ae;
+      font-weight: 700;
+      margin-bottom: 2.5rem;}
+
+section h3 {
+      color: #019d5e;
+      font-weight: 700;
+      margin-bottom: 2.5rem;
+}
+
+section h4 {
+      color: #f6271d;
+      font-weight: 700;
+      position: absolute;
+      left: 2.5rem;
+      bottom: 2.5rem;
+
+
+}
+
+/*  ---------------------  */
+/*  |   @MEDIA QUERIES  |  */
+/*  ---------------------  */
+
+@media (min-width: 705px) {
+      nav ul {
+        flex-direction: row;
+      }
+      section {
+        margin-bottom: 4.5rem
+      }
+      header, footer {padding-left: 0;padding-right: 0;}
+}
+
+
+@supports (grid-area: auto) {
+
+      @media (min-width: 1150px) {
+            body {
+                  max-width: 1150px;}
+
+            main {
+                  display: grid;
+                  grid-template-columns: 1fr 1fr;
+                  grid-gap: 4.5rem;}
+            header, footer {padding-left: 0;padding-right: 0;}
+            section {
+              margin-bottom: 0;
+            }
+
+      }
+}

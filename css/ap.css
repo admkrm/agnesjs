@@ -1,0 +1,128 @@
+/*
+  Name: AP stylesheet
+  Description: Specific CSS for the AP theme using Agnes. Agnes is a lightweight javascript presentation framework
+  Author: Kristof Michiels
+  Date: october 2018
+*/
+
+/*  --------------  */
+/*  |   GENERAL  |  */
+/*  --------------  */
+
+@font-face {
+    font-family: "steelfish rg";
+    src: url("/fonts/steelfish/steelfish rg.ttf");
+    font-weight: 400;
+}
+
+body {
+      color: #68676c;
+      font-family: 'Arial', sans-serif;
+      font-weight: 400;}
+
+p {
+      font-size: 1.78575vw;
+      margin-bottom: 2.8572vw;
+      line-height: 3.125vw;}
+
+ul {
+      list-style: none;
+      margin-bottom: 2.8572vw;}
+
+li {
+      font-size: 1.78575vw;
+      margin-left: 2.5vw;
+      line-height: 3.21435vw;
+      margin-bottom: 1.4286vw;}
+
+li::before {
+			content: "•";
+			color: #d92229;
+  		display: inline-block; width: 1em;
+  		margin-left: -1em}
+
+ul li > ul li {
+			margin-bottom: 0;
+}
+
+ul li > ul li::before {content: "-";}
+ul li > ul li > ul li::before {content: "•";}
+
+section a {
+      color: #34b7eb;}
+
+h2 {
+      font-family: 'steelfish rg', sans-serif;
+      /*font-size: 3.57vw;*/
+      font-size: 3vw;
+      letter-spacing: .2vw;
+      line-height: 4vw;
+      margin-bottom: 2.8572vw;
+      font-weight: 700;}
+
+strong {
+			text-decoration: underline;
+			font-weight: 900;
+}
+
+/*  -------------------  */
+/*  |   FRONT/BACK    |  */
+/*  -------------------  */
+
+section {
+      border-bottom: 1px solid #222222;
+      background-image: url("/img/ap/ap-inzet-rechts.png");
+      background-position: right top;
+      background-repeat: no-repeat;
+      background-size: 15vw;
+}
+
+section:first-child {
+      border-bottom: 0;
+      background-image: url("/img/ap/ap-cover-left.png"), url("/img/ap/ap-cover-right.png");
+      background-position: left bottom, right top;
+      background-repeat: no-repeat, no-repeat;
+      background-size: contain, contain;
+      padding-top: 20vh;
+    }
+
+section:first-child h1, section:first-child h2 {
+      font-family: 'steelfish rg', sans-serif;
+      font-size: 3.5vw;
+      text-align: center;
+      margin-bottom: 3.5vw;
+      font-weight: 700;
+      letter-spacing: .2vw;
+    }
+
+section:first-child h2 {
+      /*font-size: 2.4rem;*/
+      font-size: 2vw;
+      margin-bottom: 1vw;
+      letter-spacing: 0.2vw;
+      color: #86858c;
+}
+
+section:last-child {
+      background-image: url('/img/ap/ap-laatste-slide.png');
+      background-size: auto 80vh;
+      background-repeat: no-repeat;
+      background-position: center 10vh;
+}
+
+/*  -----------------  */
+/*  |   NAVIGATION  |  */
+/*  -----------------  */
+
+.navigation a {
+      font-family: 'Karla', sans-serif;
+      font-weight: 700;
+      background-color: #ea1e25;}
+
+/*  ---------------------  */
+/*  |   @MEDIA QUERIES  |  */
+/*  ---------------------  */
+
+@media (min-width: 1200px) {
+      section {border: 0;}
+}
